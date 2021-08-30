@@ -1,3 +1,4 @@
+  
 name: Update gist
 on:
   repository_dispatch:
@@ -12,6 +13,6 @@ jobs:
       - name: Update gist
         uses: maxam2017/productive-box@master
         env:
-          GH_TOKEN: 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
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GIST_ID: ad1bac8272492ad60b9317c2019a7da0
           TIMEZONE: Asia/Seoul
